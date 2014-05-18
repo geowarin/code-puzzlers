@@ -10,7 +10,7 @@ buildscript {
     }
 }
 
-apply plugin: 'java'
+apply plugin: 'groovy'
 apply plugin: 'eclipse'
 apply plugin: 'idea'
 apply plugin: 'spring-boot'
@@ -25,8 +25,9 @@ repositories {
 }
 
 dependencies {
-    compile("org.springframework.boot:spring-boot-starter-web:${springBootVersion}")
-    testCompile("org.springframework.boot:spring-boot-starter-test:${springBootVersion}")
+    compile 'org.codehaus.groovy:groovy-all:2.3.0'
+    compile("org.springframework.boot:spring-boot-starter-web")
+    testCompile("org.springframework.boot:spring-boot-starter-test")
 }
 
 task wrapper(type: Wrapper) {
