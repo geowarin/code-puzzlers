@@ -16,7 +16,7 @@ import org.springframework.test.context.web.WebAppConfiguration
  * @author Geoffroy Warin (http://geowarin.github.io)
  */
 @RunWith(SpringJUnit4ClassRunner)
-@IntegrationTest(['server.port=0'])
+@IntegrationTest(['port=0'])
 @WebAppConfiguration
 @SpringApplicationConfiguration(classes = [Application])
 abstract class AbstractIntegrationTest {
